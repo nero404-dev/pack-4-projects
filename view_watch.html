@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Watch | Cartier</title>
+    <link rel="stylesheet" href="view_watch.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <div class="body">
+        <!-- header -->
+        <header>
+            <div class="back-btn">
+                <a href="view_watches.html"><button>Back</button></a>
+            </div>
+            <div class="adjust">
+                <button id="theme-toggle">Switch to Light Mode</button>
+            </div>
+            
+            <!-- Add a button to toggle the magnifier -->
+            <button id="toggleButton" onclick="toggleMagnifier()">Show Magnifier</button>
+        </header>
+
+        <div id="shadow_hr"></div>
+
+        <!-- main -->
+        <main>
+            <section class="watch-info">
+                <div class="col-1">
+                    <div class="big-image img-magnifier-container">
+                        <img id="myimage" src="pictures/watches-santos_de_cartier-image_1.jpeg">
+                    </div>
+                    <div class="small-images">
+                        <div class="small-image">
+                            <a href="view_watch.html"><img src="pictures/watches-santos_de_cartier-image_1.1.jpg"></a>
+                        </div>
+                        <div class="small-image">
+                            <a href="view_watch.html"><img src="pictures/watches-santos_de_cartier-image_1.2.jpg"></a>
+                        </div>
+                        <div class="small-image">
+                            <a href="view_watch.html"><img src="pictures/watches-santos_de_cartier-image_1.3.jpg"></a>
+                        </div>
+                        <div class="small-image">
+                            <a href="view_watch.html"><img src="pictures/watches-santos_de_cartier-image_1.4.jpg"></a>
+                        </div>
+                        <div class="small-image">
+                            <a href="view_watch.html"><img src="pictures/watches-santos_de_cartier-image_1.5.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h5 id="brand">Cartier</h5>
+                    <h1 id="productName">Santos De Cartier Watch - Silver Model - Automatic</h1>
+                    <h2 id="price">$ 150.00 USD</h2>
+
+                    <form id="cartForm" action="watch_cart.html" method="GET">
+                        <div class="size">
+                            <h4>Size</h4>
+                            <input type="radio" id="option1" name="options" value="S">
+                            <label for="option1">Small</label>
+                        
+                            <input type="radio" id="option2" name="options" value="M">
+                            <label for="option2">Medium</label>
+                        
+                            <input type="radio" id="option3" name="options" value="L">
+                            <label for="option3">Large</label>
+                        </div>
+                        <div class="quantity">
+                            <h4>Quantity</h4>
+                            <div class="number-input">
+                                <button type="button" id="decrement">-</button>
+                                <input type="text" id="number" name="quantity" value="1" readonly>
+                                <button type="button" id="increment">+</button>
+                            </div>
+                        </div>
+                        <input type="submit" value="Add to cart">
+                    </form>
+
+                    <div class="description">
+                        <h4>Watch Description</h4>
+                        <span class="short-text">
+                            Santos watch, medium model, Manufacture mechanical movement with automatic winding, caliber 1847... 
+                        </span>
+                        <span class="full-text hidden">
+                            Santos watch, medium model, Manufacture mechanical movement with automatic winding, caliber 1847 MC. Steel case,
+                            seven-sided crown set with a faceted synthetic spinel, silvered opaline dial, blued-steel sword-shaped hands,
+                            sapphire crystal, and interchangeable steel bracelet. 
+                        </span>
+                        <span class="read-more-btn">Read More</span>
+                    </div>
+
+                    <div class="share">
+                        <button class="share-button">Share</button>
+                    
+                        <div class="overlay" id="overlay"></div>
+                        <div class="popup" id="popup">
+                            <h3>Share this link:</h3>
+                            <input type="text" id="link" value="https://stores.cartier.com/" readonly>
+                            <button id="copy-button">Copy Link</button>
+                            <button class="close-btn" id="close-popup">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="additional">
+                <h2>You may also like</h2>
+
+                <div class="cats">
+                    <div class="cat">
+                        <a href="view_watch.html">
+                            <div class="image">
+                                <img src="pictures/watches-santos_de_cartier-image_9.jpg">
+                            </div>
+                            <h3>Cartier One</h3>
+                            <p>$ 250,000</p>
+                        </a>
+                    </div>
+                    <div class="cat">
+                        <a href="view_watch.html">
+                            <div class="image">
+                                <img src="pictures/watches-santos_de_cartier-image_2.jpg">
+                            </div>
+                            <h3>Cartier Two</h3>
+                            <p>$ 250,000</p>
+                        </a>
+                    </div>
+                    <div class="cat">
+                        <a href="view_watch.html">
+                            <div class="image">
+                                <img src="pictures/watches-santos_de_cartier-image_12.jpg">
+                            </div>
+                            <h3>Cartier Three</h3>
+                            <p>$ 250,000</p>
+                        </a>
+                    </div>
+                    <div class="cat">
+                        <a href="view_watch.html">
+                            <div class="image">
+                                <img src="pictures/watches-santos_de_cartier-image_3.jpg">
+                            </div>
+                            <h3>Cartier Four</h3>
+                            <p>$ 250,000</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- adjust dark->light mode -->
+        <script>
+            // Select the toggle button
+            const themeToggleButton = document.getElementById('theme-toggle');
+
+            // Add an event listener to the button
+            themeToggleButton.addEventListener('click', () => {
+                // Toggle the 'light-mode' class on the body
+                document.body.classList.toggle('light-mode');
+
+                // Update the button text based on the current mode
+                if (document.body.classList.contains('light-mode')) {
+                    themeToggleButton.textContent = 'Switch to Dark Mode';
+                } else {
+                    themeToggleButton.textContent = 'Switch to Light Mode';
+                }
+            });
+        </script>
+        
+        <script>
+            // JavaScript to handle increment and decrement
+            const decrementButton = document.getElementById('decrement');
+            const incrementButton = document.getElementById('increment');
+            const numberInput = document.getElementById('number');
+
+            let currentValue = parseInt(numberInput.value);
+
+            decrementButton.addEventListener('click', () => {
+                if (currentValue > 1) {
+                    currentValue--;
+                    numberInput.value = currentValue;
+
+                    // Disable decrement button if value is 1
+                    if (currentValue === 1) {
+                        decrementButton.disabled = true;
+                    }
+                }
+            });
+
+            incrementButton.addEventListener('click', () => {
+                currentValue++;
+                numberInput.value = currentValue;
+
+                // Enable decrement button if value is greater than 1
+                if (currentValue > 1) {
+                    decrementButton.disabled = false;
+                }
+            });
+        </script>
+
+        <script>
+            // JavaScript to toggle between "Read More" and "Read Less"
+            const readMoreBtn = document.querySelector('.read-more-btn');
+            const shortText = document.querySelector('.short-text');
+            const fullText = document.querySelector('.full-text');
+
+            readMoreBtn.addEventListener('click', () => {
+            if (fullText.classList.contains('hidden')) {
+                // Expand to show full text
+                fullText.classList.remove('hidden');
+                shortText.classList.add('hidden');
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                // Collapse to show short text
+                fullText.classList.add('hidden');
+                shortText.classList.remove('hidden');
+                readMoreBtn.textContent = 'Read More';
+            }
+            });
+        </script>
+
+        <script>
+            const shareButton = document.querySelector('.share-button');
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+            const copyButton = document.getElementById('copy-button');
+            const linkInput = document.getElementById('link');
+            const closePopup = document.getElementById('close-popup');
+
+            // Show the popup when the share button is clicked
+            shareButton.addEventListener('click', () => {
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+            });
+
+            // Close the popup
+            closePopup.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+            });
+
+            // Copy the link to the clipboard
+            copyButton.addEventListener('click', () => {
+            linkInput.select();
+            document.execCommand('copy');
+            alert('Link copied to clipboard!');
+            });
+
+            // Close the popup when clicking outside of it
+            overlay.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+            });
+        </script>
+
+        <script>
+            let magnifierVisible = false; // Track the visibility of the magnifier
+
+            function magnify(imgID, zoom) {
+                var img, glass, w, h, bw;
+                img = document.getElementById(imgID);
+                /* Create magnifier glass: */
+                glass = document.createElement("DIV");
+                glass.setAttribute("class", "img-magnifier-glass");
+                glass.setAttribute("id", "magnifierGlass"); // Add an ID for toggling
+                /* Insert magnifier glass: */
+                img.parentElement.insertBefore(glass, img);
+                /* Set background properties for the magnifier glass: */
+                glass.style.backgroundImage = "url('" + img.src + "')";
+                glass.style.backgroundRepeat = "no-repeat";
+                glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+                bw = 3;
+                w = glass.offsetWidth / 2;
+                h = glass.offsetHeight / 2;
+                /* Execute a function when someone moves the magnifier glass over the image: */
+                glass.addEventListener("mousemove", moveMagnifier);
+                img.addEventListener("mousemove", moveMagnifier);
+                /* And also for touch screens: */
+                glass.addEventListener("touchmove", moveMagnifier);
+                img.addEventListener("touchmove", moveMagnifier);
+
+                function moveMagnifier(e) {
+                    var pos, x, y;
+                    /* Prevent any other actions that may occur when moving over the image */
+                    e.preventDefault();
+                    /* Get the cursor's x and y positions: */
+                    pos = getCursorPos(e);
+                    x = pos.x;
+                    y = pos.y;
+                    /* Prevent the magnifier glass from being positioned outside the image: */
+                    if (x > img.width - (w / zoom)) { x = img.width - (w / zoom); }
+                    if (x < w / zoom) { x = w / zoom; }
+                    if (y > img.height - (h / zoom)) { y = img.height - (h / zoom); }
+                    if (y < h / zoom) { y = h / zoom; }
+                    /* Set the position of the magnifier glass: */
+                    glass.style.left = (x - w) + "px";
+                    glass.style.top = (y - h) + "px";
+                    /* Display what the magnifier glass "sees": */
+                    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+                }
+
+                function getCursorPos(e) {
+                    var a, x = 0, y = 0;
+                    e = e || window.event;
+                    /* Get the x and y positions of the image: */
+                    a = img.getBoundingClientRect();
+                    /* Calculate the cursor's x and y coordinates, relative to the image: */
+                    x = e.pageX - a.left;
+                    y = e.pageY - a.top;
+                    /* Consider any page scrolling: */
+                    x = x - window.pageXOffset;
+                    y = y - window.pageYOffset;
+                    return { x: x, y: y };
+                }
+            }
+
+            function toggleMagnifier() {
+                const magnifier = document.getElementById("magnifierGlass");
+                if (magnifier) {
+                    if (magnifierVisible) {
+                        magnifier.style.display = "none"; // Hide the magnifier
+                        document.getElementById("toggleButton").textContent = "Show Magnifier";
+                    } else {
+                        magnifier.style.display = "block"; // Show the magnifier
+                        document.getElementById("toggleButton").textContent = "Hide Magnifier";
+                    }
+                    magnifierVisible = !magnifierVisible; // Toggle the state
+                }
+            }
+        </script>
+
+        <script>
+            /* Initiate Magnify Function
+            with the id of the image, and the strength of the magnifier glass:*/
+            magnify("myimage", 3);
+        </script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                var element = document.querySelector(".watch-info");
+                // var element2 = document.querySelector(".additional");
+
+
+                var position = element.getBoundingClientRect().top;
+                // var position2 = element2.getBoundingClientRect().top;
+
+                var windowHeight = window.innerHeight;
+                if (position < windowHeight) {
+                    element.classList.add("scroll");
+                }
+                // if (position2 < windowHeight) {
+                //     element2.classList.add("scroll");
+                // }
+
+            });
+        </script>
+
+        <script>
+            // JavaScript to handle form submission and pass dynamic data
+            const form = document.getElementById('cartForm');
+
+            // Get the product details dynamically
+            const brand = document.getElementById('brand').textContent;
+            const productName = document.getElementById('productName').textContent;
+            const price = document.getElementById('price').textContent;
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent default form submission
+
+                // Get the selected size option
+                const selectedOption = document.querySelector('input[name="options"]:checked');
+                const quantity = document.getElementById('number').value;
+
+                if (!selectedOption) {
+                    alert('Please select a size option.');
+                    return;
+                }
+
+                // Build the query string with all the data
+                const queryString = `?brand=${encodeURIComponent(brand)}&productName=${encodeURIComponent(productName)}&price=${encodeURIComponent(price)}&size=${encodeURIComponent(selectedOption.value)}&quantity=${encodeURIComponent(quantity)}`;
+
+                // Redirect to watch_cart.html with the query string
+                window.location.href = `watch_cart.html${queryString}`;
+            });
+        </script>
+    </div>
+</body>
+</html>

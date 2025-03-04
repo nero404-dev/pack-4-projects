@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cartier</title>
+    <link rel="stylesheet" href="watches.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <div class="body">
+    <!-- header -->
+    <header>
+        <div class="nav-1">
+            <div class="in-nav-1">
+                <div class="col-1">
+                    <p>Custom Logo Watches & More, Free Shipping & Returns</p>
+                </div>
+                <div class="col-2">
+                    <!-- <a href="#"><i class="fa fa-adjust" aria-hidden="true"></i></a> -->
+                    <div class="adjust">
+                        <button id="theme-toggle" onclick="toggleLogo()">Switch to Light Mode</button>
+                    </div>
+                    <div class="fas">
+                        <!-- <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a> -->
+                        <div class="search">
+                            <a><button class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button></a>
+                        
+                            <div class="overlay" id="overlay"></div>
+                            <div class="popup" id="popup">
+                                <h3>Search here:</h3>
+                                <input type="search" placeholder="Santos De Cartier.. ">
+                                <button class="close-btn" id="close-popup">Close</button>
+                            </div>
+                        </div>
+                        <a id="cart" href="watch_cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>1</span></a>
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-2">
+            <div class="in-nav-2">
+                <div class="col-1">
+                    <div class="logo logo-DM">
+                        <a href="index.html"><img src="pictures/watches-Cartier_logo_DM.png"></a>
+                    </div>
+                    <div class="logo logo-LM">
+                        <a href="index.html"><img src="pictures/watches-Cartier_logo.png"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <nav>
+                        <ul>
+                            <li id="active"><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="view_watches.html">Watches</a></li>
+                            <li><a href="#faqs">FAQS</a></li>
+                            <li><a href="#map">Location</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <a href="tel:+96176134251"><i class="fa fa-phone" aria-hidden="true"></i> +961 76 134 251</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-2-resp">
+            <div class="dashes">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+        <div class="intro">
+            <div class="in-intro">
+                <h1>Custom Watches For Any Occasion</h1>
+                <div class="btns">
+                    <a href="#"><button>Design & Order</button></a>
+                    <a href="#"><button>Request Virtual Sample</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="resp-watch-image">
+            <!-- <hr> -->
+            <img src="pictures/watches-kloria-Square-Diamond-Watches_copy.jpg">
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+        <a id="active" href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="view_watches.html">Watches</a>
+        <a href="#faqs">FAQS</a>
+        <a href="#map">Location</a>
+        <a href="#contact">Contact</a>
+        <br>
+        <a href="tel:+96176134251"><i class="fa fa-phone" aria-hidden="true"></i> +961 76 134 251</a>
+
+        <hr id="resp-hr">
+
+        <div class="sidenav-icons">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="watch_cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>1</span></a>
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <!-- main -->
+    <main>
+        <section class="store">
+            <div class="col-1">
+                <div class="image">
+                    <img src="pictures/watches-Cartier-Santos-Large-Blue-Swords-39.8-SteelBlack-Diamond.png">
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>About</h1>
+                <p>The <b>Santos de Cartier</b> collection is a timeless symbol of innovation and elegance, originally created in <b>1904</b> by Louis Cartier for the Brazilian aviator <b>Alberto Santos-Dumont</b>. Designed as one of the first wristwatches in history, it addressed the need for practicality and ease of use during flight. The collection is instantly recognizable by its <u>square case</u>, <u>visible screws</u>, and <u>sleek yet bold design</u>, which reflect both functionality and sophistication. Over the decades, the Santos de Cartier has evolved, incorporating modern features like <b>automatic movements</b> and <b>interchangeable straps</b>, while preserving its heritage and iconic aesthetic. It is a true testament to Cartier's ability to blend tradition with innovation. </p>
+                <p>The Santos de Cartier is not just a watch—it's a statement of luxury and adventure. Its designs celebrate the spirit of aviation and the pioneering vision of Alberto Santos-Dumont, making it a favorite for those who appreciate fine craftsmanship and history. Available in a variety of sizes, materials, and finishes, the collection offers something for every style, from classic gold to contemporary steel and bi-metal options. Whether worn casually or formally, the Santos de Cartier exudes a sense of sophistication and confidence, making it an enduring icon in the world of haute horology. </p>
+            </div>
+        </section>
+
+        <section class="collections">
+            <h1>Some Collections</h1>
+            <div class="cats">
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_9.jpg">
+                        </div>
+                        <h3>Cartier One</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_2.jpg">
+                        </div>
+                        <h3>Cartier Two</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_12.jpg">
+                        </div>
+                        <h3>Cartier Three</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_3.jpg">
+                        </div>
+                        <h3>Cartier Four</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+
+
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_6.jpg">
+                        </div>
+                        <h3>Cartier Five</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_7.jpg">
+                        </div>
+                        <h3>Cartier Six</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_18.jpg">
+                        </div>
+                        <h3>Cartier Seven</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+                <div class="cat">
+                    <a href="view_watch.html">
+                        <div class="image">
+                            <img src="pictures/watches-santos_de_cartier-image_20.jpg">
+                        </div>
+                        <h3>Cartier Eight</h3>
+                        <p>$ 250,000</p>
+                    </a>
+                </div>
+            </div>
+            <div class="view-btn">
+                <a href="view_watches.html"><button>View All Collections</button></a>
+            </div>
+        </section>
+
+        <section class="faqs" id="faqs">
+            <h1>FAQs Section</h1>
+            <div class="question q1">
+                <p>Are they water-resistant? </p>
+                <button id="answerBtn1"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <div id="hiddenDiv1" class="hidden">
+                <p>Yes, they are water-resistant up to 50 meters. </p>
+            </div>
+            <div class="question q2">
+                <p>How long is the warranty period? </p>
+                <button id="answerBtn2"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <div id="hiddenDiv2" class="hidden">
+                <p>The waranty period is 2-YEARS. </p>
+            </div>
+            <div class="question q3">
+                <p>Can I replace the watch strap? </p>
+                <button id="answerBtn3"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <div id="hiddenDiv3" class="hidden">
+                <p>Absolutely Yes, you can replace the strap with your favorite one, and leather is an option. </p>
+            </div>
+        </section>
+
+        <section class="video">
+            <video muted playsinline autoplay>
+                <source src="videos/Santos_De_Cartier-ad.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="reviews">
+            <h1>Our Customer's Reviews</h1>
+            <div class="cats">
+                <div class="cat">
+                    <div class="row-1">
+                        <p>"i've owned several luxury watches, but my Cartier watch stands out from the rest. The craftsmanship is
+                            impeccable, and the attension to detail is truly remarkable. It's a timeless piece that never fails to garner
+                            compliments. I'm proud to be a Cartier watch owner. "</p>
+                    </div>
+                    <div class="row-2">
+                        <div class="name-date">
+                            <h4>David T. <br> Feb. 22, 2023</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="row-1">
+                        <p>"I've been wearing my Cartier watch for over a year now, and I'm extremely impressed with its performance. Not
+                            only does it look stunning, but it also keeps time flawlessly. The quality and reliability of this watch are
+                            unmatched. It's become an essential part of my everyday style. "</p>
+                    </div>
+                    <div class="row-2">
+                        <div class="name-date">
+                            <h4>Emma Turner <br> April 5, 2023</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cat">
+                    <div class="row-1">
+                        <p>"As a watch collector, I appreciate watches that blend elegance with functionality. My Cartier watch does exactly
+                            that. The design is sleek and sophisticated, and the automatic movement keeps perfect time. I've recieved
+                            numerous compliments on its unique design. "</p>
+                    </div>
+                    <div class="row-2">
+                        <div class="name-date">
+                            <h4>Emily Bennet <br> April 18, 2023</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location" id="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52985.74851910882!2d35.435144358203125!3d33.899715199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f16e60d1b26d1%3A0x36a99be5a09a9ab7!2sCartier!5e0!3m2!1sen!2slb!4v1739781586999!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="row-1">
+            <div class="col col-1">
+                <h1>Get In Touch</h1>
+                <form action="#">
+                    <h4>Your Name</h4>
+                    <input type="text" placeholder="Write your name here">
+                    <h4>Your email</h4>
+                    <input type="email" placeholder="Write your email here">
+                    <h4>Your message</h4>
+                    <textarea required placeholder="Write message" rows="4"></textarea>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="ORDER NOW">
+                </form>
+            </div>
+            <div class="col col-2">
+                <h1>Stay Connected</h1>
+                <div class="links">
+                    <a href="mailto:samertarhini14@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> samertarhini14@gmail.com</a>
+                    <a href="tel:+9611972600"><i class="fa fa-phone" aria-hidden="true"></i> +961 01 972 600</a>
+                    <a href="https://stores.cartier.com/"><i class="fa fa-globe" aria-hidden="true"></i> stores.cartier.com</a>
+                </div>
+
+                <h1 id="social-info-h1">Social Info</h1>
+                <div class="social-links">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <p>Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> Cartier. 2025 | All Rights Reserved</p>
+            <!-- <p><i class="fa fa-copyright" aria-hidden="true"></i> Cartier. Designed By <b>Samer Trh</b></p> -->
+        </div>
+    </footer>
+
+    <!-- js resp nav -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "90%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!-- adjust dark->light mode -->
+    <script>
+        // Select the toggle button
+        const themeToggleButton = document.getElementById('theme-toggle');
+
+        // Add an event listener to the button
+        themeToggleButton.addEventListener('click', () => {
+            // Toggle the 'light-mode' class on the body
+            document.body.classList.toggle('light-mode');
+
+            // Update the button text based on the current mode
+            if (document.body.classList.contains('light-mode')) {
+                themeToggleButton.textContent = 'Switch to Dark Mode';
+            } else {
+                themeToggleButton.textContent = 'Switch to Light Mode';
+            }
+        });
+    </script>
+
+    <!-- js intro switch images/divs -->
+    <script>
+        // Select the "1st" and "2nd" divs
+        const firstDiv = document.querySelector('.logo-DM');
+        const secondDiv = document.querySelector('.logo-LM');
+
+        // Initially show the "1st" div and hide the "2nd" div
+        firstDiv.style.display = 'block';
+        secondDiv.style.display = 'none';
+
+        // Function to toggle between the two divs
+        function toggleLogo() {
+            if (firstDiv.style.display === 'block') {
+                firstDiv.style.display = 'none';
+                secondDiv.style.display = 'block';
+            } else {
+                firstDiv.style.display = 'block';
+                secondDiv.style.display = 'none';
+            }
+        }
+
+        // Set an interval to switch every 5 seconds
+        // setInterval(toggleDivs, 5000);
+    </script>
+
+    <!-- js FAQS (questions/answers) -->
+    <script>
+        document.getElementById("answerBtn1").addEventListener("click", function () {
+            const hiddenDiv = document.getElementById("hiddenDiv1");
+            const button = document.getElementById("answerBtn1");
+            const icon = document.querySelector('#answerBtn1 i');
+            
+
+            if (hiddenDiv.classList.contains("hidden")) {
+                hiddenDiv.classList.remove("hidden");
+                hiddenDiv.classList.add("visible");
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                hiddenDiv.classList.remove("visible");
+                hiddenDiv.classList.add("hidden");
+                icon.classList.add('fa-plus');
+                icon.classList.remove('fa-minus');
+            }
+        });
+
+        document.getElementById("answerBtn2").addEventListener("click", function () {
+            const hiddenDiv = document.getElementById("hiddenDiv2");
+            const button = document.getElementById("answerBtn2");
+            const icon = document.querySelector('#answerBtn2 i');
+
+            if (hiddenDiv.classList.contains("hidden")) {
+                hiddenDiv.classList.remove("hidden");
+                hiddenDiv.classList.add("visible");
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                hiddenDiv.classList.remove("visible");
+                hiddenDiv.classList.add("hidden");
+                icon.classList.add('fa-plus');
+                icon.classList.remove('fa-minus');
+            }
+        });
+
+        document.getElementById("answerBtn3").addEventListener("click", function () {
+            const hiddenDiv = document.getElementById("hiddenDiv3");
+            const button = document.getElementById("answerBtn3");
+            const icon = document.querySelector('#answerBtn3 i');
+
+            if (hiddenDiv.classList.contains("hidden")) {
+                hiddenDiv.classList.remove("hidden");
+                hiddenDiv.classList.add("visible");
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            } else {
+                hiddenDiv.classList.remove("visible");
+                hiddenDiv.classList.add("hidden");
+                icon.classList.add('fa-plus');
+                icon.classList.remove('fa-minus');
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var element = document.querySelector(".store");
+            var element2 = document.querySelector(".collections");
+            var element3 = document.querySelector(".faqs");
+            var element4 = document.querySelector(".video");
+            var element5 = document.querySelector(".reviews");
+            var element6 = document.querySelector(".location");
+
+
+            var position = element.getBoundingClientRect().top;
+            var position2 = element2.getBoundingClientRect().top;
+            var position3 = element3.getBoundingClientRect().top;
+            var position4 = element4.getBoundingClientRect().top;
+            var position5 = element5.getBoundingClientRect().top;
+            var position6 = element6.getBoundingClientRect().top;
+
+            var windowHeight = window.innerHeight;
+            if (position < windowHeight) {
+                element.classList.add("scroll");
+            }
+            if (position2 < windowHeight) {
+                element2.classList.add("scroll");
+            }
+            if (position3 < windowHeight) {
+                element3.classList.add("scroll");
+            }
+            if (position4 < windowHeight) {
+                element4.classList.add("scroll");
+            }
+            if (position5 < windowHeight) {
+                element5.classList.add("scroll");
+            }
+            if (position6 < windowHeight) {
+                element6.classList.add("scroll");
+            }
+
+        });
+    </script>
+
+    <!-- js video -->
+    <script>
+        // Select all video elements
+        const videos = document.querySelectorAll('video');
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+
+                if (entry.isIntersecting) {
+                    // Play the video when it enters the viewport
+                    video.play();
+                } else {
+                    // Pause the video when it exits the viewport
+                    video.pause();
+                }
+            });
+        }, {
+            threshold: 0.5 // Trigger when 50% of the video is visible
+        });
+
+        // Observe each video
+        videos.forEach(video => observer.observe(video));
+    </script>
+
+    <!-- js cart -->
+    <script>
+        const searchButton = document.querySelector('.search-button');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const closePopup = document.getElementById('close-popup');
+
+        // Show the popup when the share button is clicked
+        searchButton.addEventListener('click', () => {
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+        });
+
+        // Close the popup
+        closePopup.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        });
+
+        // Close the popup when clicking outside of it
+        overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        });
+    </script>
+
+    </div>
+</body>
+</html>

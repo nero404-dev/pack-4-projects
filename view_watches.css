@@ -1,0 +1,282 @@
+.body {
+    background-color: var(--dark-mode);
+}
+
+.light-mode .body {
+    background-color: var(--grey-12);
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .back-btn {
+    padding: 30px 0;
+}
+
+header .back-btn a {
+    text-decoration: none;
+}
+
+header .back-btn a button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+header .back-btn a button:hover {
+    border: 1px solid var(--pink-2);
+}
+
+.light-mode header .back-btn a button {
+    border: 1px solid var(--grey-9);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .back-btn a button:hover {
+    border: 1px solid var(--grey-black-5);
+}
+
+header .adjust {
+    padding: 0 0 30px 0;
+}
+
+header .adjust button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+header .adjust button:hover {
+    background-color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button {
+    border: 1px solid var(--grey-5);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button:hover {
+    background-color: var(--grey-15);
+}
+
+header .intro {
+    padding: 20px 0;
+    animation-name: intro_animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes intro_animation {
+    from   {opacity: 0;}
+    to  {opacity: 1;}
+}
+
+header .intro h1 {
+    color: var(--grey-15);
+}
+
+.light-mode header .intro h1 {
+    color: var(--grey-black-3);
+}
+
+header .intro p {
+    color: var(--grey-9);
+    line-height: 25px;
+}
+
+.light-mode header .intro p {
+    color: var(--grey-5);
+}
+
+#shadow_hr {
+    background-color: var(--grey-21); /* grey-21: #2a2a2a */
+    height: 3px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+    margin: 50px 0;
+}
+
+.light-mode #shadow_hr {
+    background-color: var(--grey-16); /* grey-16: #a4a4a4 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* <---> */
+
+.scroll {
+    animation-name: scroll-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll-animation {
+    from   {opacity: 0;}
+    to  {opacity: 1;}
+}
+
+.all-collections {
+    width: 80%;
+    margin: 30px auto;
+    /* background-color: black;
+    border-radius: 8px; */
+    padding: 50px 30px;
+    opacity: 0;
+}
+
+/* .light-mode .all-collections {
+    background-color: var(--pink-1);
+} */
+
+.all-collections h1 {
+    font-size: 32px;
+    color: var(--grey-12);
+    padding-left: 10px;
+    margin: 0 0 30px 0;
+    border-left: 3px solid var(--pink-1);
+}
+
+.light-mode .all-collections h1 {
+    color: var(--grey-black-5);
+}
+
+.all-collections .cats {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 16px; /* Adds space between items */
+    /* padding: 16px; */
+    justify-content: space-between; /* Distributes items evenly */
+}
+
+.all-collections .cats a {
+    text-decoration: none;
+}
+
+.all-collections .cats .cat {
+    /* flex: 1 1 calc(25%); */
+    flex: 1 1 calc(25% - 16px); /* Each card takes 25% width minus the gap */
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    background-color: var(--grey-black-5);
+    border: 1px solid var(--grey-black-3);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.light-mode .all-collections .cats .cat {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.all-collections .cats .cat:hover {
+    background-color: var(--grey-black-3);
+    cursor: pointer;
+}
+
+.light-mode .all-collections .cats .cat:hover {
+    background-color: var(--grey-15);
+}
+
+.all-collections .cats .cat .image {
+    width: 100%;
+}
+
+.all-collections .cats .cat:hover .image {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+/* .all-collections .cats .cat:hover h3 {
+    text-decoration: underline var(--pink-1);
+} */
+
+.all-collections .cats .cat .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.all-collections .cats .cat h3 {
+    color: var(--grey-15);
+}
+
+.all-collections .cats .cat p {
+    color: var(--grey-9);
+}
+
+.light-mode .all-collections .cats .cat h3 {
+    color: var(--grey-black-5);
+}
+
+.light-mode .all-collections .cats .cat p {
+    color: var(--grey-5);
+}
+
+/* Responsive Design: 2 Columns on Smaller Screens
+@media (max-width: 768px) {
+    .all-collections .cats .cat {
+        Each card takes 50% width minus the gap
+        flex: 1 1 calc(50% - 16px);
+    }
+} */
+
+.hidden {
+    display: none;
+}
+
+.load-btn {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.load-btn button {
+    padding: 15px 40px;
+    background-color: transparent;
+    color: var(--pink-1);
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.load-btn button:hover {
+    border: 1px solid var(--pink-2);
+}
+
+.light-mode .load-btn button {
+    color: var(--grey-black-5);
+    transition: background-color 0.3s;
+}
+
+.light-mode .load-btn button:hover {
+    background-color: var(--grey-15);
+    border: 1px solid var(--grey-15);
+}
+
+/* <---> */
+
+@media screen and (max-width: 414px) {
+    .all-collections {
+        padding: 0;
+    }
+    .all-collections .cats .cat {
+        /* Each card takes 50% width minus the gap */
+        flex: 1 1 calc(50% - 16px);
+    }
+    .all-collections .view-btn a button {
+        padding: 8px 20px;
+    }
+}

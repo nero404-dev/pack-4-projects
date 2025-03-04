@@ -1,0 +1,633 @@
+/* <---> */
+
+.scroll {
+    animation-name: scroll-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll-animation {
+    from   {opacity: 0;}
+    to  {opacity: 1;}
+}
+
+.body {
+    background-color: var(--dark-mode);
+}
+
+.light-mode .body {
+    background-color: var(--grey-12);
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .back-btn {
+    padding: 30px 0;
+}
+
+header .back-btn a {
+    text-decoration: none;
+}
+
+header .back-btn a button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+header .back-btn a button:hover {
+    border: 1px solid var(--pink-2);
+}
+
+.light-mode header .back-btn a button {
+    border: 1px solid var(--grey-9);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .back-btn a button:hover {
+    border: 1px solid var(--grey-black-5);
+}
+
+header .adjust {
+    padding: 0 0 30px 0;
+}
+
+header .adjust button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+header .adjust button:hover {
+    background-color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button {
+    border: 1px solid var(--grey-5);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button:hover {
+    background-color: var(--grey-15);
+}
+
+#toggleButton {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    /* transition: background-color 0.6s; */
+}
+
+#toggleButton:hover {
+    background-color: var(--pink-1);
+    color: var(--grey-black-5);
+}
+
+.light-mode #toggleButton {
+    color: var(--grey-black-5);
+}
+
+#shadow_hr {
+    background-color: var(--grey-21); /* grey-21: #2a2a2a */
+    height: 3px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+    margin: 50px 0;
+}
+
+.light-mode #shadow_hr {
+    background-color: var(--grey-16); /* grey-16: #a4a4a4 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* <---> */
+
+.watch-info {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+    display: flex;
+    opacity: 0;
+}
+
+.watch-info .col-1 {
+    width: 50%;
+    display: block;
+}
+
+.watch-info .col-1 .big-image {
+    width: 100%;
+}
+
+.watch-info .col-1 .big-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    display: none; /* Initially hidden */
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 150px;
+    height: 150px;
+}
+
+.watch-info .col-1 .small-images {
+    width: 100%;
+    display: flex;
+    /* column-gap: 5px; */
+    /* border: 2px solid var(--grey-9); */
+    margin: 10px 0;
+}
+
+.watch-info .col-1 .small-images .small-image {
+    filter: brightness(0.7);
+}
+
+.watch-info .col-1 .small-images .small-image:hover {
+    transform: scale(0.95);
+    transition-duration: 0.5s;
+    overflow: hidden;
+    filter: brightness(1);
+}
+
+.watch-info .col-1 .small-images .small-image a {
+    text-decoration: none;
+}
+
+.watch-info .col-1 .small-images .small-image a img {
+    width: 100%;
+    height: 100%;
+}
+
+.watch-info .col-2 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.watch-info .col-2 h5 {
+    color: var(--pink-1);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.watch-info .col-2 h1 {
+    color: var(--grey-12);
+    margin: 5px 0 30px 0;
+    font-size: 28px;
+}
+
+.light-mode .watch-info .col-2 h1 {
+    color: var(--grey-black-5);
+}
+
+.watch-info .col-2 h2 {
+    color: var(--grey-9);
+}
+
+.light-mode .watch-info .col-2 h2 {
+    color: var(--grey-5);
+}
+
+/* <---> */
+
+.watch-info #cartForm h4 {
+    color: var(--grey-5);
+}
+
+.light-mode .watch-info #cartForm h4 {
+    color: var(--grey-9);
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the label to look like a button */
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px 0 0;
+    font-size: 16px;
+    color: var(--grey-9);
+    background-color: transparent;
+    border: 1px solid var(--grey-5);
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.3s, color 0.3s; */
+    transition: border 0.3s;
+}
+
+.light-mode label {
+    border: 1px solid var(--grey-9);
+    color: var(--grey-5);
+}
+
+/* Add hover effect */
+label:hover {
+    border: 1px solid var(--grey-9);
+}
+
+.light-mode label:hover {
+    border: 1px solid var(--grey-5);
+}
+
+/* Change appearance when the radio button is checked */
+input[type="radio"]:checked+label {
+    background-color: var(--pink-1);
+    border-color: var(--pink-1);
+    color: var(--grey-black-5);
+}
+
+/* <---> */
+
+/* Container for the input */
+.number-input {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--grey-5);
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.light-mode .number-input {
+    border: 1px solid var(--grey-9);
+}
+
+/* Buttons for increment and decrement */
+.number-input button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--grey-9);
+}
+
+.light-mode .number-input button {
+    color: var(--grey-5);
+}
+
+.number-input button:disabled {
+    color: var(--grey-5);
+    cursor: not-allowed;
+}
+
+/* The number display */
+.number-input input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    color: var(--grey-9);
+}
+
+.light-mode .number-input input {
+    color: var(--grey-5);
+}
+
+/* Add hover effect for buttons */
+.number-input button:hover:not(:disabled) {
+    color: var(--grey-12);
+}
+
+.light-mode .number-input button:hover:not(:disabled) {
+    color: var(--grey-black-5);
+}
+
+#cartForm input[type=submit] {
+    display: block;
+    margin: 30px 0;
+    /* padding: 10px 20px; */
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--pink-1);
+    font-size: 16px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.light-mode #cartForm input[type=submit] {
+    border: 1px solid var(--pink-1);
+    background-color: var(--pink-1);
+    color: var(--grey-black-5);
+}
+
+#cartForm input[type=submit]:hover {
+    background-color: var(--grey-black-5);
+}
+
+.light-mode #cartForm input[type=submit]:hover {
+    border: 1px solid var(--grey-9);
+    background-color: var(--grey-9);
+}
+
+/* <---> */
+
+/* Basic styling */
+.description {
+    /* font-family: Arial, sans-serif;
+    line-height: 1.6; */
+    line-height: 26px;
+    color: var(--grey-9);
+}
+
+.light-mode .description {
+    color: var(--grey-5);
+}
+
+.description h4 {
+    color: var(--grey-5);
+}
+
+.light-mode .description h4 {
+    color: var(--grey-9);
+}
+
+.hidden {
+    display: none;
+}
+
+.read-more-btn {
+    color: var(--pink-1);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* <---> */
+
+.share {
+    padding: 50px 0;
+}
+
+/* Basic styling for the share button and popup */
+.share-button {
+    padding: 10px 20px;
+    display: block;
+    float: right;
+    right: 0;
+    background-color: transparent;
+    color: var(--grey-9);
+    border: 1px solid var(--grey-9);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s, border 0.3s;
+}
+
+.light-mode .share-button {
+    background-color: transparent;
+    color: var(--grey-5);
+    border: 1px solid var(--grey-5);
+}
+
+.share-button:hover {
+    background-color: transparent;
+    color: var(--pink-1);
+}
+
+.light-mode .share-button:hover {
+    border: 1px solid var(--pink-1);
+    color: var(--grey-5);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid var(--pink-1);
+    border-radius: 5px;
+    background-color: var(--grey-black-5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.light-mode .popup {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup h3 {
+    color: var(--grey-9);
+}
+
+.light-mode .popup h3 {
+    color: var(--grey-5);
+}
+
+.popup input {
+    padding: 5px 20px;
+    border: 1px solid var(--pink-1);
+    border-radius: 5px;
+    background-color: var(--grey-9);
+    color: var(--grey-black-5);
+}
+
+.popup input:focus {
+    outline: 2px solid var(--pink-1);
+}
+
+.light-mode .popup input {
+    background-color: var(--grey-12);
+}
+
+.popup #copy-button {
+    padding: 5px 10px;
+    border: 1px solid var(--pink-1);
+    border-radius: 5px;
+    background-color: var(--grey-9);
+    color: var(--grey-black-5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.light-mode .popup #copy-button {
+    background-color: var(--grey-12);
+}
+
+.popup #copy-button:hover {
+    background-color: var(--pink-1);
+}
+
+.light-mode .popup #copy-button:hover {
+    background-color: var(--grey-9);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 19;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: var(--pink-1);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: var(--grey-9);
+}
+
+.light-mode .close-btn:hover {
+    color: var(--grey-5);
+}
+
+/* <---> */
+
+.additional {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    /* opacity: 0; */
+}
+
+.additional h2 {
+    color: var(--grey-12);
+    margin: 30px 0;
+    padding-left: 10px;
+    border-left: 3px solid var(--pink-1);
+}
+
+.light-mode .additional h2 {
+    color: var(--grey-black-5);
+}
+
+.additional .cats {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 16px; /* Adds space between items */
+    /* padding: 16px; */
+    justify-content: space-between; /* Distributes items evenly */
+}
+
+.additional .cats a {
+    text-decoration: none;
+}
+
+.additional .cats .cat {
+    /* flex: 1 1 calc(25%); */
+    flex: 1 1 calc(25% - 16px); /* Each card takes 25% width minus the gap */
+    box-sizing: border-box; /* Includes padding and border in width/height */
+    background-color: var(--grey-black-5);
+    border: 1px solid var(--grey-black-3);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.light-mode .additional .cats .cat {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.additional .cats .cat:hover {
+    background-color: var(--grey-black-3);
+    cursor: pointer;
+}
+
+.light-mode .additional .cats .cat:hover {
+    background-color: var(--grey-15);
+}
+
+.additional .cats .cat .image {
+    width: 100%;
+}
+
+.additional .cats .cat:hover .image {
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+/* .additional .cats .cat:hover h3 {
+    text-decoration: underline var(--pink-1);
+} */
+
+.additional .cats .cat .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.additional .cats .cat h3 {
+    color: var(--grey-15);
+}
+
+.additional .cats .cat p {
+    color: var(--grey-9);
+}
+
+.light-mode .additional .cats .cat h3 {
+    color: var(--grey-black-5);
+}
+
+.light-mode .additional .cats .cat p {
+    color: var(--grey-5);
+}
+
+/* <---> */
+
+@media screen and (max-width: 414px) {
+    .watch-info {
+        padding: 0;
+        display: block;
+    }
+    .watch-info .col-1 {
+        width: 100%;
+    }
+    .watch-info .col-2 {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .additional .cats .cat {
+        /* Each card takes 50% width minus the gap */
+        flex: 1 1 calc(50% - 16px);
+    }
+}

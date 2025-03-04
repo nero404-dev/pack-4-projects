@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Smart Restaurant</title>
+    <link rel="stylesheet" href="smart_restaurant.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="in-header">
+            <div class="col-1">
+                <div class="logo">
+                    <a href="index.html"><img src="pictures/smart_restaurant-logo.jpeg"></a>
+                </div>
+                <div class="table-nb">
+                    <p><i class="fa fa-chevron-right" aria-hidden="true"></i> Table No. 4</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="btn view-order">
+                    <a href="#"><button>View Order</button></a>
+                </div>
+                <div class="btn check-out">
+                    <a href="#"><button>Check Out</button></a>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <p id="cart-nb">1</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <table>
+            <tr>
+                <th>Food Image</th>
+                <th>Food Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td><img src="pictures/smart_restaurant-burger.jpeg"></td>
+                <td>Mango Juice</td>
+                <td> -1+ </td>
+                <td>$2.99</td>
+                <td>$5.98</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td><img src="pictures/smart_restaurant-burger.jpeg"></td>
+                <td>Mango Juice</td>
+                <td> -1+ </td>
+                <td>$2.99</td>
+                <td>$5.98</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td><img src="pictures/smart_restaurant-burger.jpeg"></td>
+                <td>Mango Juice</td>
+                <td> -1+ </td>
+                <td>$2.99</td>
+                <td>$5.98</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td><img src="pictures/smart_restaurant-burger.jpeg"></td>
+                <td>Mango Juice</td>
+                <td> -1+ </td>
+                <td>$2.99</td>
+                <td>$5.98</td>
+                <td>x</td>
+            </tr>
+        </table>
+    </main>
+
+    <div class="food-info">
+        <div class="in-food-info">
+            <div class="col-1">
+                <div class="image">
+                    <img src="pictures/group-of-images_img-1.jpeg">
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>Mango Juice</h1>
+                <div class="desc">
+                    <h3>Tell us what you don't like in this order: </h3>
+                    <input type="text" placeholder="Description.. ">
+                </div>
+                <div class="extras">
+                    <p>Extras: <br><br>(Check-boxes)</p>
+                </div>
+                <div class="quantity-price">
+                    <div class="quantity">
+                        <p>Quantity: </p>
+                        <input type="number" value="1">
+                    </div>
+                    <div class="price">
+                        <p id="price">Price: </p>
+                        <p id="price-nb">$ 2.99</p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#"><button>Add To Cart</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,375 @@
+body {
+    background-color: var(--grey-15);
+}
+
+header {
+    padding: 20px 0;
+    background-color: var(--red);
+}
+
+header .in-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.in-header .col-1 {
+    display: flex;
+    margin: auto 0;
+}
+
+.in-header .col-1 .logo {
+    width: 10%;
+    margin: auto 0;
+}
+
+.in-header .col-1 .logo:hover {
+    filter: brightness(0.7);
+}
+
+.in-header .col-1 .logo a {
+    text-decoration: none;
+}
+
+.in-header .col-1 .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.in-header .col-1 .table-nb {
+    margin: auto 30px;
+}
+
+.in-header .col-1 .table-nb p {
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.in-header .col-1 .table-nb p .fa {
+    padding-right: 10px;
+}
+
+.in-header .col-2 {
+    display: flex;
+    margin: auto 0;
+}
+
+.in-header .col-2 .btn a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.in-header .col-2 .btn a button {
+    padding: 8px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.in-header .col-2 .view-order a button {
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    color: var(--red);
+}
+
+.in-header .col-2 .view-order a button:hover {
+    border: 1px solid var(--red);
+    background-color: var(--grey-15);
+}
+
+.in-header .col-2 .check-out a button {
+    border: 1px solid var(--yellow);
+    background-color: transparent;
+    color: var(--yellow);
+}
+
+.in-header .col-2 .check-out a button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 40%; */
+    width: 0;
+    height: 100%;
+    background-color: var(--yellow);
+    transition: width .2s ease-in-out;
+    border-radius: 5px;
+    z-index: -2;
+}
+
+.in-header .col-2 .check-out a button:hover::before {
+    width: 100%;
+}
+
+.in-header .col-2 .check-out a button:hover {
+    color: var(--red);
+}
+
+.in-header .col-2 .cart {
+    margin: auto 0 auto 30px;
+    position: relative;
+}
+
+.in-header .col-2 .cart a {
+    color: var(--yellow);
+    font-size: 24px;
+    padding: 5px 0;
+}
+
+.in-header .col-2 .cart a:hover {
+    border-top: 1px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+}
+
+.in-header .col-2 .cart #cart-nb {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    font-size: 14px;
+
+    /* background-color: var(--yellow);
+    color: var(--red); */
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+main table {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid var(--red);
+}
+
+table tr th {
+    padding: 10px 0;
+    background-color: var(--yellow);
+    color: var(--red);
+}
+
+table tr td {
+    padding: 20px 50px;
+    border: 1px solid var(--grey-15);
+}
+
+table tr td img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+table tr:nth-child(odd) {
+    background-color: #d9d9d9;
+    color: var(--red);
+}
+
+.food-info {
+    padding: 50px 0;
+}
+
+.food-info .in-food-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.in-food-info .col-1 {
+    width: 40%;
+    margin: auto 0;
+}
+
+.in-food-info .col-1 .image {
+    width: 100%;
+    margin: auto 0;
+}
+
+.in-food-info .col-1 .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.in-food-info .col-2 {
+    width: 50%;
+    margin: auto;
+}
+
+.in-food-info .col-2 h1 {
+    text-align: center;
+    color: var(--red);
+    margin: 50px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--grey-5);
+}
+
+.in-food-info .col-2 .desc {
+    margin: 20px 0;
+}
+
+.in-food-info .col-2 .desc h3 {
+    color: var(--grey-5);
+    margin: 10px 0;
+}
+
+.in-food-info .col-2 .desc input {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-5);
+    color: var(--red);
+    caret-color: var(--yellow);
+    background-color: var(--grey-15);
+}
+
+.in-food-info .col-2 .desc input:focus {
+    outline: 1px solid var(--red);
+}
+
+.in-food-info .col-2 .extras {
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    border: 1px solid var(--grey-5);
+    border-radius: 10px;
+}
+
+.in-food-info .col-2 .extras p {
+    color: var(--red);
+    padding-left: 20px;
+}
+
+.in-food-info .col-2 .quantity-price {
+    display: flex;
+}
+
+.in-food-info .col-2 .quantity-price .quantity {
+    display: flex;
+}
+
+.in-food-info .col-2 .quantity-price .quantity p {
+    color: var(--grey-5);
+}
+
+.in-food-info .col-2 .quantity-price .quantity input {
+    width: 40%;
+    height: 30px;
+    margin: auto 20px;
+    border: 1px solid var(--grey-5);
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: var(--grey-15);
+    color: var(--red);
+    caret-color: var(--yellow);
+}
+
+.in-food-info .col-2 .quantity-price .quantity input:focus {
+    outline: 1px solid var(--red);
+}
+
+.in-food-info .col-2 .quantity-price .price {
+    float: right;
+    right: 20px;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.in-food-info .col-2 .quantity-price .price #price-nb {
+    color: var(--red);
+    font-size: 20px;
+    display: block;
+    margin: auto;
+}
+
+.in-food-info .col-2 .quantity-price .price #price {
+    color: var(--grey-5);
+    display: block;
+    margin: auto;
+}
+
+.in-food-info .col-2 .btn {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.in-food-info .col-2 .btn a {
+    text-decoration: none;
+}
+
+.in-food-info .col-2 .btn a button {
+    padding: 8px 20px;
+    border: 1px solid var(--grey-5);
+    background-color: transparent;
+    color: var(--red);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.in-food-info .col-2 .btn a button:hover {
+    border: 1px solid var(--red);
+}
+
+@media screen and (max-width: 414px) {
+    header .in-header {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .in-header .col-1 {
+        display: flex;
+        margin: auto;
+    }
+    .in-header .col-2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    main table {
+        display: none;
+    }
+
+    .food-info .in-food-info {
+        display: block;
+    }
+    .in-food-info .col-1 {
+        width: 100%;
+    }
+    .in-food-info .col-2 {
+        width: 90%;
+    }
+    .in-food-info .col-2 .quantity-price {
+        display: block;
+    }
+    .in-food-info .col-2 .quantity-price .quantity {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .in-food-info .col-2 .quantity-price .price {
+        float: unset;
+        right: unset;
+        margin: auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+}

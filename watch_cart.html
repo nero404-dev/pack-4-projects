@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Cartier</title>
+    <link rel="stylesheet" href="watch_cart.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <div class="body">
+        <!-- header -->
+        <header>
+            <div class="back-btn">
+                <a href="watches.html"><button>Back</button></a>
+            </div>
+            <div class="adjust">
+                <button id="theme-toggle">Switch to Light Mode</button>
+            </div>
+        </header>
+
+        <div id="shadow_hr"></div>
+    
+        <!-- main -->
+        <main>
+            <section class="cart">
+                <h1>Your Cart</h1>
+                <!-- <p id="cartDetails"></p> -->
+                <div class="in-cart">
+                    <div class="cart-image">
+                        <img src="pictures/watches-santos_de_cartier-image_1.jpg">
+                    </div>
+                    <div id="cartDetails">
+                        <strong>Brand:</strong> Cartier <br>
+                        <strong>Product:</strong> Santos De Cartier Watch - Silver Model - Automatic <br>
+                        <strong>Price:</strong> $150.00 USD <br>
+                        <strong>Size:</strong> Medium <br>
+                        <strong>Quantity:</strong> 2
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-checkout">
+                <div class="in-cart-checkout">
+                    <h3 id="estimatedTotal">Estimated Total: </h3>
+                    <p>Taxes, discounts and shipping calculated at checkout. </p>
+                    <a href="watches.html"><button>Check out</button></a>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            // Parse query parameters from the URL
+            const params = new URLSearchParams(window.location.search);
+            const brand = params.get('brand');
+            const productName = params.get('productName');
+            const price = params.get('price');
+            const size = params.get('size');
+            const quantity = params.get('quantity');
+
+            // Display the cart details
+            const cartDetails = document.getElementById('cartDetails');
+            const estimatedTotal = document.getElementById('estimatedTotal'); // Get the estimated total element
+
+            if (brand && productName && price && size && quantity) {
+                cartDetails.innerHTML = `
+                <strong>Brand:</strong> ${brand} <br>
+                <strong>Watch Type:</strong> ${productName} <br>
+                <strong>Price:</strong> ${price} <br>
+                <strong>Size:</strong> ${size} <br>
+                <strong>Quantity:</strong> ${quantity} <br>
+            `;
+
+                // Calculate the total
+                const priceValue = parseFloat(price.replace('$', '').replace('USD', '').trim()); // Convert price to a number
+                const quantityValue = parseInt(quantity, 10); // Convert quantity to an integer
+                const total = priceValue * quantityValue;
+
+                // Update the estimated total with the calculated value
+                estimatedTotal.textContent = `Estimated Total: $${total.toFixed(2)} USD`;
+            } else {
+                cartDetails.textContent = 'No items in the cart.';
+
+                // Set the estimated total to $0.00 or a custom message
+                estimatedTotal.textContent = `Estimated Total: $0.00 USD`;
+            }
+        </script>
+
+        <!-- adjust dark->light mode -->
+        <script>
+            // Select the toggle button
+            const themeToggleButton = document.getElementById('theme-toggle');
+
+            // Add an event listener to the button
+            themeToggleButton.addEventListener('click', () => {
+                // Toggle the 'light-mode' class on the body
+                document.body.classList.toggle('light-mode');
+
+                // Update the button text based on the current mode
+                if (document.body.classList.contains('light-mode')) {
+                    themeToggleButton.textContent = 'Switch to Dark Mode';
+                } else {
+                    themeToggleButton.textContent = 'Switch to Light Mode';
+                }
+            });
+        </script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+                var element = document.querySelector(".cart");
+                var element2 = document.querySelector(".cart-checkout");
+
+
+                var position = element.getBoundingClientRect().top;
+                var position2 = element2.getBoundingClientRect().top;
+
+                var windowHeight = window.innerHeight;
+                if (position < windowHeight) {
+                    element.classList.add("scroll");
+                }
+                if (position2 < windowHeight) {
+                    element2.classList.add("scroll");
+                }
+
+            });
+        </script>
+    </div>
+</body>
+</html>

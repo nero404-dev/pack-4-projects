@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-Commerce 2</title>
+    <link rel="stylesheet" href="ecommerce_two.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <a href="#"><li>Websites</li></a>
+                    <a href="#"><li>Online Stores</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <li id="hover-input">
+                        More <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <ul id="hover-output">
+                            <a href="#"><li>Guides</li></a>
+                            <a href="#"><li>Themes</li></a>
+                            <a href="#"><li>Features</li></a>
+                            <a href="#"><li>Blog</li></a>
+                            <a href="#"><li>App Center</li></a>
+                            <a href="#"><li>SEO Guide</li></a>
+                            <a href="#"><li>Help</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="pictures/Ecommerce_Website_copy_2.png"></a>
+            </div>
+
+            <div class="log-sign">
+                <a href="#">Log In</a>
+                <a href="#"><button>Sign Up</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- responsive header -->
+    <header class="resp-header">
+        <div class="logo">
+            <a href="index.html"><img src="pictures/Ecommerce_Website_copy_2.png"></a>
+        </div>
+        <div class="dashes">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+        <a href="#">Websites</a>
+        <a href="#">Online Stores</a>
+        <a href="#">Pricing</a>
+        <ul>
+            <li>More <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <div class="more">
+                    <a href="#">Guides</a>
+                    <a href="#">Themes</a>
+                    <a href="#">Features</a>
+                    <a href="#">Blog</a>
+                    <a href="#">App Center</a>
+                    <a href="#">SEO Guide</a>
+                    <a href="#">Help</a>
+                </div>
+            </li>
+        </ul>
+
+        <hr id="resp-hr">
+
+        <div class="resp-log-sign">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="in-intro">
+            <div class="col-1">
+                <h1>Professional online stores for entrepreneurs</h1>
+                <p>Have the freedom to launch and grow your online store wherever, whenever. </p>
+                <a href="#"><button>Create Your Store</button></a>
+            </div>
+            <div class="col-2">
+                <div class="images first-img">
+                    <div class="image">
+                        <img src="pictures/weebly-header-img.jpeg">
+                    </div>
+
+                    <div class="iPad-image">
+                        <img id="iPad-cover" src="pictures/weebly-ipad-white.png">
+                        <img id="iPad-img" src="pictures/weebly-hoc.png">
+                    </div>
+
+                    <div class="website">
+                        <a href="https://www.littlechoc.nyc.com">Julia from littlechoc.nyc</a>
+                    </div>
+                </div>
+                <div class="images second-img">
+                    <div class="image">
+                        <img src="pictures/weebly-better-portrait.jpeg">
+                    </div>
+
+                    <div class="iPad-image">
+                        <img id="iPad-cover" src="pictures/weebly-ipad-white.png">
+                        <img id="iPad-img" src="pictures/weebly-iPad-img.png">
+                    </div>
+
+                    <div class="website">
+                        <a href="https://www.bethebetter.com">Barrington from bethebetter.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <main>
+        <section class="ecommerce-online-store">
+            <div class="col-1">
+                <div class="bg-image">
+                    <img src="pictures/weebly-art.jpeg">
+                </div>
+
+                <div class="front-image">
+                    <img src="pictures/weebly-theme.png">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <h1>Bring your eCommerce online store to life</h1>
+                <p>Choose a unique online store design with a customizable theme to showcase your products. Our easy-to-use drag & drop
+                    builder helps you launch your online store quickly. </p>
+                <a href="#"><button>View Themes</button></a>
+            </div>
+        </section>
+
+        <section class="marketing-tools">
+            <div class="col-1">
+                <h1>Grow your business with smart marketing tools</h1>
+                <div class="cols-1-2">
+                    <div class="col-1-1 first-col">
+                        <h3>Emails</h3>
+                        <p>Use customizable email templates, like an <a href="#">abandoned cart</a> or welcome email, to connect with your
+                            customers. </p>
+                    </div>
+
+                    <div class="col-1-1 second-col">
+                        <h3>SEO & Site Stats</h3>
+                        <p>We optimize your site for <a href="#">SEO</a> to help search engines discover you. Our <a href="#">analytics</a>
+                            tools help you track site
+                            performance. Plus, you can further enhance your store with partners from our <a href="#">app center</a>. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="image">
+                    <img src="pictures/weebly-insights.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <section class="all-freedom">
+            <div class="freedom">
+                <div class="in-freedom">
+                    <!-- <img id="bg-image" src="pictures/weebly-backphone.jpeg"> -->
+                    <h1>The freedom to work wherever, whenever</h1>
+                    <p>Our 5-star app for mobile and tablet lets you launch, edit and analyze your business with the same ease and power
+                        as our website. Enjoy the freedom to work on your online store while you are sitting at a coffee shop or out
+                        traveling for inspiration. </p>
+                    <h4>Available: </h4>
+
+                    <div class="mobile-apps">
+                        <a href="#"><img src="pictures/app-store.png"></a>
+                        <a href="#"><img src="pictures/google-play.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="col-1">
+                <h1>Features to maintain your store, all in one place</h1>
+                <div class="cols">
+                    <h3>Shipping</h3>
+                    <p>Our <a href="#">shipping tool</a> makes sending your products domestically or internationally, easy. Get
+                        real-time shipping rates dynamically by carrier, address, weight and quantity. </p>
+                </div>
+
+                <div class="cols">
+                    <h3>Inventory</h3>
+                    <p>Easily track inventory and supply with advanced inventory management tools such as bulk import and export
+                        features to help you manage a growing online store. </p>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="image">
+                    <img src="pictures/weebly-insights2.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <hr id="resp-hr-between">
+
+        <section class="gift-cards">
+            <div class="col-1">
+                <div class="image">
+                    <img src="pictures/weebly-store.jpeg">
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="row row-1">
+                    <div class="row-col">
+                        <h3>Coupons and Gift Cards</h3>
+                        <p>Create coupons with the <a href="#">coupon builder</a> and make custom gift cards to increase sales. </p>
+                    </div>
+                    <div class="row-col">
+                        <h3>Product Search and Badges</h3>
+                        <p>Help visitors find the items they are looking for with <a href="#">product search</a> for your online store.
+                            Make products stand out with badges for sale items or when items are low in stock. </p>
+                    </div>
+                </div>
+                
+                <div class="row row-2">
+                    <div class="row-col">
+                        <h3>Customer Reviews</h3>
+                        <p>Feature customer reviews to help people learn more about a product and increase interest. </p>
+                    </div>
+                    <div class="row-col">
+                        <h3>Checkout</h3>
+                        <p>Accept <a href="#">payments</a> using Square, Stripe or PayPal. Use the fully-integrated <a href="#">shopping
+                                cart</a> and <a href="#">automatic tax calculator</a>. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="help">
+            <div class="col-1">
+                <h1>We're here to Help</h1>
+                <p>You're not alone. We're here to guide you. Our intuitive platform walks you through all the steps to help you
+                    launch your online store with confidence. </p>
+                <br>
+                <p>Reach us on chat, email or by phone. We'll help you navigate each step — from setting up to launching and growing
+                    your business. </p>
+                <a href="#"><button>Create your store</button></a>
+            </div>
+            <div class="col-2">
+                <div class="image">
+                    <img src="pictures/weebly-smiles.jpeg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="row-1">
+            <ul>
+                <h3>Product</h3>
+                <li><a href="#">Websites</a></li>
+                <li><a href="#">Online Stores</a></li>
+                <li><a href="#">Photo Studio</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">App Center</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+            </ul>
+            <ul>
+                <h3>Resources</h3>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Success Stories</a></li>
+                <li><a href="#">Developer Docs</a></li>
+                <li><a href="#">Affiliates</a></li>
+            </ul>
+            <ul>
+                <h3>Support</h3>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+            <ul>
+                <h3>Company</h3>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Additional California <br>Privacy Disclosure</a></li>
+            </ul>
+        </div>
+        <div class="row-2">
+            <div class="col left">
+                <a href="https://www.weebly.com"><i class="fa fa-copyright" aria-hidden="true"></i> 2025 Square, Inc</a>
+            </div>
+            <div class="col middle">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.googleplus.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+            <div class="col right">
+                <!-- <select>
+                    <option>English</option>
+                    <option>Arabic</option>
+                </select> -->
+                <div class="custom-select">
+                    <div class="selected">English <i class="fa fa-angle-up" aria-hidden="true"></i></div>
+                    <ul class="options">
+                        <a href="#"><li>English</li></a>
+                        <a href="#"><li>Arabic</li></a>
+                        <a href="#"><li>Spain</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js resp nav -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "90%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!-- js intro switch images/divs -->
+    <script>
+        // Select the "1st" and "2nd" divs
+        const firstDiv = document.querySelector('.first-img');
+        const secondDiv = document.querySelector('.second-img');
+
+        // Initially show the "1st" div and hide the "2nd" div
+        firstDiv.style.display = 'block';
+        secondDiv.style.display = 'none';
+
+        // Function to toggle between the two divs
+        function toggleDivs() {
+            if (firstDiv.style.display === 'block') {
+                firstDiv.style.display = 'none';
+                secondDiv.style.display = 'block';
+            } else {
+                firstDiv.style.display = 'block';
+                secondDiv.style.display = 'none';
+            }
+        }
+
+        // Set an interval to switch every 5 seconds
+        setInterval(toggleDivs, 5000);
+    </script>
+
+    <!-- js select language -->
+    <script>
+        const selected = document.querySelector('.selected');
+        const options = document.querySelector('.options');
+
+        selected.addEventListener('click', () => {
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+
+        options.addEventListener('click', (e) => {
+            if (e.target.tagName === 'LI') {
+                selected.textContent = e.target.textContent;
+                options.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+.scroll {
+    animation-name: scroll-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scroll-animation {
+    from   {opacity: 0;}
+    to  {opacity: 1;}
+}
+
+.body {
+    background-color: var(--dark-mode);
+}
+
+.light-mode .body {
+    background-color: var(--grey-12);
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .back-btn {
+    padding: 30px 0;
+}
+
+header .back-btn a {
+    text-decoration: none;
+}
+
+header .back-btn a button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+header .back-btn a button:hover {
+    border: 1px solid var(--pink-2);
+}
+
+.light-mode header .back-btn a button {
+    border: 1px solid var(--grey-9);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .back-btn a button:hover {
+    border: 1px solid var(--grey-black-5);
+}
+
+header .adjust {
+    padding: 0 0 30px 0;
+}
+
+header .adjust button {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--grey-15);
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+header .adjust button:hover {
+    background-color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button {
+    border: 1px solid var(--grey-5);
+    background-color: transparent;
+    color: var(--grey-black-5);
+}
+
+.light-mode header .adjust button:hover {
+    background-color: var(--grey-15);
+}
+
+#shadow_hr {
+    background-color: var(--grey-21); /* grey-21: #2a2a2a */
+    height: 3px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+    margin: 30px 0;
+}
+
+.light-mode #shadow_hr {
+    background-color: var(--grey-16); /* grey-16: #a4a4a4 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* <---> */
+
+.cart {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    opacity: 0;
+}
+
+.cart h1 {
+    color: var(--grey-12);
+    margin: 30px 0;
+    padding-left: 10px;
+    border-left: 3px solid var(--pink-1);
+}
+
+.light-mode .cart h1 {
+    color: var(--grey-black-5);
+}
+
+.cart .in-cart {
+    display: flex;
+    background-color: var(--grey-black-5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.646);
+    border: 1px solid var(--grey-black-2);
+}
+
+.light-mode .cart .in-cart {
+    background-color: var(--grey-15);
+    border: 1px solid #aaaaaa;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.289);
+}
+
+.cart .in-cart .cart-image {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.646);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.light-mode .cart .in-cart .cart-image {
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.289);
+}
+
+.cart .in-cart .cart-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Style the container */
+#cartDetails {
+    background-color: var(--grey-8); /* Light gray background */
+    border: 1px solid var(--grey-black-5); /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    max-width: 400px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.646); /* Add a subtle shadow */
+}
+
+.light-mode #cartDetails {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.289);
+}
+
+/* Style the text inside the container */
+#cartDetails strong {
+    color: var(--pink-1); /* Darker color for labels */
+    font-weight: bold; /* Make labels bold */
+    padding-right: 5px;
+}
+
+/* .light-mode #cartDetails strong {
+    color: #333;
+} */
+
+#cartDetails {
+    color: var(--grey-9); /* Slightly lighter color for text */
+    line-height: 34px; /* Improve readability */
+}
+
+.light-mode #cartDetails {
+    color: #555;
+}
+
+/* Add spacing between lines
+#cartDetails br {
+    margin-bottom: 10px;
+} */
+
+/* Style the price specifically */
+#cartDetails strong:nth-of-type(3) {
+    color: var(--pink-1); /* Highlight the price in red */
+    font-size: 1.2em; /* Make the price slightly larger */
+    text-decoration: underline;
+}
+
+/* Add hover effect to the container
+#cartDetails:hover {
+    Change background on hover
+    background-color: #fff;
+    Slightly darker border
+    border-color: #ccc;
+    Enhance shadow on hover
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+} */
+
+/* <---> */
+
+.cart-checkout {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    opacity: 0;
+}
+
+.cart-checkout .in-cart-checkout {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style the estimated total */
+.in-cart-checkout #estimatedTotal {
+    font-size: 1.5em; /* Make the text larger */
+    color: var(--pink-1); /* Highlight the text */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    border-bottom: 2px solid var(--grey-5);
+    padding-bottom: 5px;
+}
+
+.light-mode .in-cart-checkout #estimatedTotal {
+    border-bottom: 2px solid var(--grey-9);
+}
+
+.in-cart-checkout p {
+    color: var(--grey-9);
+    padding: 10px 0;
+}
+
+.light-mode .in-cart-checkout p {
+    color: var(--grey-5);
+}
+
+.in-cart-checkout a {
+    text-decoration: none;
+}
+
+.in-cart-checkout a button {
+    padding: 15px 100px;
+    font-size: 16px;
+    border: 1px solid var(--pink-1);
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--pink-1);
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.light-mode .in-cart-checkout a button {
+    border: 1px solid var(--grey-12);
+    color: var(--grey-15);
+    background-color: var(--grey-black-2);
+}
+
+.in-cart-checkout a button:hover {
+    border: 1px solid var(--pink-2);
+}
+
+.light-mode .in-cart-checkout a button:hover {
+    border: 1px solid var(--grey-black-5);
+}
+
+/* <---> */
+
+@media screen and (max-width: 414px) {
+    .cart .in-cart {
+        display: block;
+    }
+    .cart .in-cart .cart-image {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .cart-checkout .in-cart-checkout {
+        width: 80%;
+    }
+    .in-cart-checkout a button {
+        padding: 10px 40px;
+    }
+}
